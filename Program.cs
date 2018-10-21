@@ -30,6 +30,10 @@ namespace Ramochka
         }
 
         static int Length(int number) {return (int)Math.Floor(Math.Log10(number)) + 1; }
-        
+        //----------------------------- Задание В -------------------------//
+        static void zadanieB
+        {
+
+        }
     }
-    }
+}
