@@ -63,5 +63,29 @@ namespace Ramochka
             Console.WriteLine("Максимальная длина=" + maxElem);
             Console.ReadKey();
         }
+        //----------------------------- Задание C -------------------------//
+        static void zadanieC()
+        {
+            string str = "(((((())))))";
+            int verifyCounter = 0;
+            int approveCounter = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '(')
+                {
+                    approveCounter++;
+                    verifyCounter++;
+                }
+                else approveCounter--;
+                if (approveCounter < 0) break;
+            }
+            if (approveCounter == 0)
+            {
+                Console.Write("Верно");
+                Console.Write("Количество скобочЕг:" + verifyCounter);
+            }
+            else Console.Write("Не верно");
+            Console.ReadKey();
+        }
     }
 }
